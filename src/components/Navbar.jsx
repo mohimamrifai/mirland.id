@@ -7,10 +7,9 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 const Navbar = () => {
 
     const navigation = [
-        // { name: 'About Us', href: '#about' },
-        // { name: 'Pricing', href: '#pricing' },
-        // { name: 'Featured', href: '#featured' },
-        // { name: 'FAQ', href: '#faq' },
+        { name: 'Fb & IG Ads', href: '#' },
+        { name: 'Google Ads', href: '#' },
+        { name: 'Sosial Media', href: '#featured' },
     ]
 
 
