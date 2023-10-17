@@ -1,6 +1,31 @@
 import React from 'react'
+import Typed from 'typed.js';
+
+
 
 const Hero = () => {
+
+    // Create reference to store the DOM element containing the animation
+    const el = React.useRef(null);
+
+    React.useEffect(() => {
+        const typed = new Typed('#godigital', {
+            strings: ['#GoDigital'],
+            typeSpeed: 130,
+            backSpeed: 80,
+            startDelay: 1200,
+            loop: true,
+            showCursor: false,
+            loopCount: Infinity,
+        });
+
+        return () => {
+            // Destroy Typed instance during cleanup to stop animation
+            typed.destroy();
+        };
+    }, []);
+
+
     return (
         <div className="relative isolate px-6 pt-10">
             <div
@@ -17,7 +42,7 @@ const Hero = () => {
             </div>
             <div className="mx-auto max-w-3xl py-32 sm:py-48 lg:py-40">
                 <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-                    <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+                    <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20 animate__animated animate__zoomIn">
                         Dapatkan Promo Esklusif Bulan Oktober{' '}
                         <a href="#" className="font-semibold text-indigo-600">
                             <span className="absolute inset-0" aria-hidden="true" />
@@ -26,20 +51,20 @@ const Hero = () => {
                     </div>
                 </div>
                 <div className="text-center">
-                    <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">
-                        Jasa Pembuatan Website Dengan Desain Responsive & Modern, <span className='text-indigo-600'>#GoDigital</span> Sekarang!!!
+                    <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl animate__animated animate__fadeInDown">
+                        Jasa Pembuatan Website Dengan Desain Responsive & Modern, <span id='godigital' ref={el} className='text-indigo-600'></span> Sekarang!!!
                     </h1>
-                    <p className="mt-6 text-lg leading-6 text-gray-600">
+                    <p className="mt-6 text-lg leading-6 text-gray-600 animate__animated animate__fadeInDown">
                         Kami siap membantu anda mewujudkan impian mempunyai website yang modern, responsive dan customable sesuai keinginan anda!
                     </p>
                     <div className="mt-10 flex items-center justify-center gap-x-6">
                         <a
                             href="#"
-                            className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                            className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 animate__animated animate__fadeInLeft"
                         >
                             Chat Sekarang
                         </a>
-                        <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+                        <a href="#" className="text-sm font-semibold leading-6 text-gray-900 animate__animated animate__fadeInRight">
                             Tentang Kami <span aria-hidden="true">→</span>
                         </a>
                     </div>

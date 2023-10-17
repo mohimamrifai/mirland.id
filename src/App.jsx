@@ -1,3 +1,7 @@
+import 'animate.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 import './App.css'
 import About from './components/About'
 import CallToAction from './components/CallToAction'
@@ -6,7 +10,12 @@ import Featured from './components/Featured'
 import Footer from './components/Footer'
 import Hero from './components/Hero'
 import Navbar from './components/Navbar'
-import Pricing from './components/Pricing'
+import Pricing from './components/Pricing'// You can also use <link> for styles
+// ..
+AOS.init({
+  offset: 300,
+  duration: 800
+});
 
 function App() {
 

@@ -6,10 +6,10 @@ const Pricing = () => {
     return (
         <section className="bg-indigo-600 py-16 px-[5%] lg:px-[10%]">
             <div className="container mx-auto text-white text-center">
-                <h2 className="text-3xl font-semibold mb-8">Sesuaikan Kebutuhan Bisnis Anda dengan Paket Kami</h2>
+                <h2 className="text-3xl font-semibold mb-8" data-aos="fade-up">Sesuaikan Kebutuhan Bisnis Anda dengan Paket Kami</h2>
                 <div className="grid grid-cols-1 md:grid-cols-3 lg:gap-2">
                     {/* Paket Harga Pertama */}
-                    <div className="bg-white text-gray-800 rounded-lg p-6 lg:mt-5 mb-3">
+                    <div className="bg-white text-gray-800 rounded-lg p-6 lg:mt-5 mb-3" data-aos="fade-up" data-aos-delay="100">
                         <h3 className="text-2xl font-semibold mb-3 underline">Paket Basic</h3>
                         <p className='px-3 text-gray-600 mb-2'>Cocok untuk landing page produk</p>
                         <p className="text-lg font-bold mb-3"><span className="text-4xl">499rb</span></p>
@@ -32,7 +32,7 @@ const Pricing = () => {
                     </div>
 
                     {/* Paket Harga Kedua */}
-                    <div className="bg-white text-indigo-600 rounded-lg p-6 mb-3">
+                    <div className="bg-white text-indigo-600 rounded-lg p-6 mb-3" data-aos="fade-up" data-aos-delay="200">
                         <h3 className="text-2xl font-semibold mb-3 underline">Paket Premium</h3>
                         <p className='text-indigo-500 px-3 mb-2'>Cocok untuk Portfolio, Company profile dan Blog</p>
                         <p className="text-lg font-bold mb-3"><span className="text-4xl">999Rb</span></p>
@@ -55,7 +55,7 @@ const Pricing = () => {
                     </div>
 
                     {/* Paket Harga Ketiga */}
-                    <div className="bg-white text-gray-800 rounded-lg p-6 lg:mt-5 mb-3">
+                    <div className="bg-white text-gray-800 rounded-lg p-6 lg:mt-5 mb-3" data-aos="fade-up" data-aos-delay="300">
                         <h3 className="text-2xl font-semibold mb-3 underline">Paket Pro</h3>
                         <p className='px-3 text-gray-600 mb-2'>Tidak menemukan paket yang cocok ?</p>
                         <p className="text-lg font-bold mb-3"><span className="text-4xl">Chat Kami!</span></p>

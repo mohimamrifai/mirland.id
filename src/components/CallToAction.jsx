@@ -15,7 +15,7 @@ const CallToAction = () => {
     function calculateCountdown() {
         const now = new Date();
         const targetTime = new Date(now);
-        targetTime.setHours(23, 0, 0, 0); // Set jam 11 malam
+        targetTime.setHours(24, 0, 0, 0); // Set jam 11 malam
 
         const timeDiff = targetTime - now;
         return Math.max(0, Math.floor(timeDiff / 1000));
@@ -31,7 +31,7 @@ const CallToAction = () => {
 
     return (
         <section className="bg-indigo-600 py-16 text-white text-center">
-            <div className="container mx-auto">
+            <div className="container mx-auto" data-aos="fade-up">
                 <h2 className="text-2xl lg:text-4xl font-semibold mb-6 lg:w-8/12 lg:mx-auto">Mempunyai Website yang profesional Merupakan Investasi Jangka Panjang.</h2>
                 <p className="text-base lg:text-lg mb-6 w-10/12 mx-auto">Sudah Saatnya Bisnis Anda Berkembang Lebih Jauh, Ambil Penawaran Sekarang!</p>
                 <div className="text-4xl font-bold mb-6">{formatTime(countdown)}</div>
