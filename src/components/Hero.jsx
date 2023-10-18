@@ -14,6 +14,7 @@ const Hero = () => {
             typeSpeed: 130,
             backSpeed: 80,
             startDelay: 1200,
+            backDelay: 1000,
             loop: true,
             showCursor: false,
             loopCount: Infinity,
