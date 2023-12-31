@@ -3,14 +3,6 @@ import React, { useState, useEffect } from 'react';
 const CallToAction = () => {
     const [countdown, setCountdown] = useState(calculateCountdown()); // Menghitung selisih waktu hingga jam 11 malam
 
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setCountdown(calculateCountdown());
-        }, 1000); // 1 detik
-
-        return () => clearInterval(interval);
-    }, []);
-
     // Fungsi untuk menghitung selisih waktu hingga jam 11 malam hari ini
     function calculateCountdown() {
         const now = new Date();
@@ -28,6 +20,14 @@ const CallToAction = () => {
         const remainingSeconds = seconds % 60;
         return `${hours.toString().padStart(2, '0')} : ${minutes.toString().padStart(2, '0')} : ${remainingSeconds.toString().padStart(2, '0')}`;
     };
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCountdown(calculateCountdown());
+        }, 1000); // 1 detik
+
+        return () => clearInterval(interval);
+    }, []);
 
     return (
         <section className="bg-indigo-600 py-16 text-white text-center">
