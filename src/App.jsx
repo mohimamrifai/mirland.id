@@ -14,13 +14,12 @@ import Pricing from './components/Pricing';
 import Services from './components/Services';
 
 
-// ..
-AOS.init({
-  offset: 150,
-  duration: 800
-});
-
 function App() {
+
+  AOS.init({
+    offset: 150,
+    duration: 800
+  });
 
   return (
     <>
