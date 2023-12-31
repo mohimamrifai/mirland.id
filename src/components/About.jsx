@@ -44,15 +44,15 @@ const features = [
 
 const About = () => {
   return (
-    <div id="about" className="overflow-hidden pb-10 mt-5 sm:py-20 bg-white">
+    <div id="about" className="overflow-hidden pb-10 mt-10 lg:mt-5 sm:py-20 bg-white">
       <div className="mx-auto max-w-6xl px-6 lg:px-8">
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
           <div className="lg:pr-8 lg:pt-4 " data-aos="fade-up">
             <div className="lg:max-w-lg">
-              <h2 className="text-base font-semibold leading-7 text-indigo-600">
+              <h2 className="text-lg font-semibold leading-7 text-indigo-600">
                 Tentang Kami
               </h2>
-              <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+              <p className="mt-2 display-font text-3xl font-bold tracking-normal text-gray-900 sm:text-4xl">
                 Jasa Pembuatan Website{" "}
                 <span className="text-indigo-600">Mirland.id</span>{" "}
               </p>
@@ -72,7 +72,7 @@ const About = () => {
           <img
             src={about}
             alt="Gambar about"
-            className="w-[25rem] max-w-none sm:w-[40rem] md:-ml-4 lg:-ml-0"
+            className="w-[20rem] max-w-none sm:w-[40rem] md:-ml-4 lg:-ml-0"
             width={2432}
             height={1442}
             data-aos="fade-up"

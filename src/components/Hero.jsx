@@ -75,18 +75,18 @@ const Hero = () => {
           </h3>
         </div>
         <div className="text-center">
-          <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl animate__animated animate__fadeInDown">
+          <h1 className="text-4xl font-bold tracking-normal text-gray-900 sm:text-5xl animate__animated animate__fadeInDown display-font">
             Jasa Pembuatan Website Profesional Untuk Berbagai Macam Kebutuhan
           </h1>{" "}
           <br />
-          <div className="flex items-center justify-between w-10/12 lg:w-8/12 mx-auto text-3xl lg:text-4xl font-bold tracking-tight text-gray-900 animate__animated animate__fadeInDown">
+          <div className="flex items-center justify-between w-11/12 lg:w-8/12 mx-auto text-2xl lg:text-4xl font-bold tracking-tight text-gray-900 animate__animated animate__fadeInDown">
           👉
             <span className="text-orange-500" ref={el} id="textberjalan"></span>
             👈
           </div>
           <p className="mt-6 text-lg leading-6 text-gray-600 animate__animated animate__fadeInDown">
             Membuat Website Dengan High Quality Design, Responsive, SEO Friendly
-            Untuk Berbagai Macam Kebutuhan Bisnis Anda.
+            Untuk Berbagai Macam Kebutuhan Anda.
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <a
