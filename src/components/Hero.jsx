@@ -79,10 +79,10 @@ const Hero = () => {
             Jasa Pembuatan Website Profesional Untuk Berbagai Macam Kebutuhan
           </h1>{" "}
           <br />
-          <div className="flex items-center justify-between w-10/12 lg:w-6/12 mx-auto text-3xl lg:text-4xl font-bold tracking-tight text-gray-900 animate__animated animate__fadeInDown">
-            |
+          <div className="flex items-center justify-between w-10/12 lg:w-8/12 mx-auto text-3xl lg:text-4xl font-bold tracking-tight text-gray-900 animate__animated animate__fadeInDown">
+          👉
             <span className="text-orange-500" ref={el} id="textberjalan"></span>
-            |
+            👈
           </div>
           <p className="mt-6 text-lg leading-6 text-gray-600 animate__animated animate__fadeInDown">
             Membuat Website Dengan High Quality Design, Responsive, SEO Friendly

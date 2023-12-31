@@ -45,7 +45,7 @@ const FAQ = () => {
                         <Disclosure key={item.id} >
                             {({ open }) => (
                                 <>
-                                    <Disclosure.Button className="flex w-full justify-between rounded-lg bg-indigo-600 px-4 py-2 text-left text-base lg:text-base font-normal text-white hover:bg- focus:outline-none focus-visible:ring focus-visible:ring-white focus-visible:ring-opacity-75 mb-2" data-aos="fade-up" data-aos-delay={index * 100}>
+                                    <Disclosure.Button className="flex w-full justify-between rounded-lg bg-indigo-600 px-4 py-2 text-left text-base lg:text-base font-normal text-white hover:bg- focus:outline-none focus-visible:ring focus-visible:ring-white focus-visible:ring-opacity-75 mb-2" data-aos="fade-up" data-aos-delay={index * 10}>
                                         <span>{item.pertanyaan}</span>
                                         <ChevronUpIcon
                                             className={`${open ? 'rotate-180 transform transition-all duration-300' : ''

@@ -13,7 +13,7 @@ import Navbar from './components/Navbar'
 import Pricing from './components/Pricing'// You can also use <link> for styles
 // ..
 AOS.init({
-  offset: 300,
+  offset: 150,
   duration: 800
 });
 
