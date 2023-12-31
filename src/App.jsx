@@ -4,17 +4,17 @@ import 'aos/dist/aos.css';
 import loadable from '@loadable/component'
 
 import './App.css'
-import About from './components/About'
-import FAQ from './components/FAQ'
-import Featured from './components/Featured'
-import Footer from './components/Footer'
-import Navbar from './components/Navbar'
-import Pricing from './components/Pricing'
-import Services from './components/Services';
-
 
 const CallToAction = loadable(() => import('./components/CallToAction'))
 const Hero = loadable(() => import('./components/Hero'))
+const About = loadable(() => import('./components/About'))
+const FAQ = loadable(() => import('./components/FAQ'))
+const Featured = loadable(() => import('./components/Featured'))
+const Footer = loadable(() => import('./components/Footer'))
+const Navbar = loadable(() => import('./components/Navbar'))
+const Pricing = loadable(() => import('./components/Pricing'))
+const Services = loadable(() => import('./components/Services'))
+
 // ..
 AOS.init({
   offset: 150,
