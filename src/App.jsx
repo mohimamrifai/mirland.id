@@ -11,6 +11,7 @@ import Footer from './components/Footer'
 import Hero from './components/Hero'
 import Navbar from './components/Navbar'
 import Pricing from './components/Pricing'// You can also use <link> for styles
+import Services from './components/Services';
 // ..
 AOS.init({
   offset: 150,
@@ -26,6 +27,7 @@ function App() {
         <Hero />
       </div>
       <About />
+      <Services />
       <Pricing />
       <Featured />
       <CallToAction />

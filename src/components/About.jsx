@@ -1,46 +1,7 @@
 import React from "react";
-import {
-  RocketLaunchIcon,
-  StarIcon,
-  DevicePhoneMobileIcon,
-  ArrowTrendingUpIcon,
-  PencilSquareIcon,
-} from "@heroicons/react/20/solid";
 
 import about from './../assets/about.svg'
 
-const features = [
-  {
-    name: "High Quality Design : ",
-    description:
-      "Kami menawarkan desain website yang menarik, modern, dan profesional, sehingga dapat meningkatkan citra bisnis Anda. Dibuat oleh profesional UI/UX Designer yang berpengalaman.",
-    icon: StarIcon,
-  },
-  {
-    name: "Responsive : ",
-    description:
-      "Website yang telah kami rancang memiliki tampilan responsif, sehingga dapat diakses dengan sempurna dari berbagai perangkat seperti PC, Laptop, Tablet, dan Smartphone.",
-    icon: DevicePhoneMobileIcon,
-  },
-  {
-    name: "SEO Friendly : ",
-    description:
-      "Website yang kami buat memiliki struktur yang SEO Friendly, sehingga dapat membantu website Anda untuk mendapatkan peringkat yang lebih baik di mesin pencari seperti Google.",
-    icon: ArrowTrendingUpIcon,
-  },
-  {
-    name: "Copywriting : ",
-    description:
-      "Website yang kami buat sudah termasuk copywriting, membuat website Anda lebih mudah dipahami oleh pengunjung.",
-    icon: PencilSquareIcon,
-  },
-  {
-    name: "Pengerjaan Cepat : ",
-    description:
-      "Kami menawarkan pengerjaan website yang cepat dan efektif, sehingga Anda dapat segera memanfaatkan website untuk kebutuhan bisnis Anda.",
-    icon: RocketLaunchIcon,
-  },
-];
 
 const About = () => {
   return (
