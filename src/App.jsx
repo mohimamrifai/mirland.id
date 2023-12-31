@@ -1,18 +1,20 @@
 import 'animate.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-
+import React, { lazy, Suspense } from 'react';
 import './App.css'
-import CallToAction from './components/CallToAction';
-import Hero from './components/Hero';
-import About from './components/About';
-import FAQ from './components/FAQ';
-import Featured from './components/Featured';
-import Footer from './components/Footer';
-import Navbar from './components/Navbar';
-import Pricing from './components/Pricing';
-import Services from './components/Services';
 
+const Hero = lazy(() => import('./components/Hero'));
+const CallToAction = lazy(() => import('./components/CallToAction'));
+const About = lazy(() => import('./components/About'));
+const FAQ = lazy(() => import('./components/FAQ'));
+const Featured = lazy(() => import('./components/Featured'));
+const Footer = lazy(() => import('./components/Footer'));
+const Navbar = lazy(() => import('./components/Navbar'));
+const Pricing = lazy(() => import('./components/Pricing'));
+const Services = lazy(() => import('./components/Services'));
+
+const renderLoader = () => <p>Loading</p>;
 
 function App() {
 
@@ -23,18 +25,17 @@ function App() {
 
   return (
     <>
-      <div>
+      <Suspense fallback={renderLoader()}>
         <Navbar />
         <Hero />
-      </div>
-      <About />
-      <Services />
-      {/* portfolio */}
-      <Pricing />
-      <Featured />
-      <CallToAction />
-      <FAQ />
-      <Footer />
+        <About />
+        <Services />
+        <Featured />
+        <Pricing />
+        <CallToAction />
+        <FAQ />
+        <Footer />
+      </Suspense>
     </>
   )
 }
