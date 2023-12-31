@@ -34,7 +34,7 @@ const CallToAction = () => {
             <div className="container mx-auto" data-aos="fade-up">
                 <h2 className="text-2xl lg:text-3xl font-semibold mb-6 lg:w-10/12 lg:mx-auto">Mempunyai Website profesional merupakan investasi jangka panjang.</h2>
                 <div className="text-4xl font-bold mb-6">{formatTime(countdown)}</div>
-                <button className="bg-white text-indigo-600 px-6 py-3 rounded-full hover:bg-white font-medium transition-all duration-200">Dapatkan Penawaran Sekarang</button>
+                <a target='_blank' href='https://api.whatsapp.com/send?phone=6282118668919&text=Halo%20admin%20mirland%2C%20' className="bg-white text-indigo-600 px-6 py-3 rounded-full hover:bg-white font-medium transition-all duration-200">Dapatkan Penawaran Sekarang</a>
             </div>
         </section>
     );
