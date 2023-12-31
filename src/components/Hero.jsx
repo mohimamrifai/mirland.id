@@ -75,7 +75,7 @@ const Hero = () => {
           </h3>
         </div>
         <div className="text-center">
-          <h1 className="text-3xl font-bold tracking-normal text-gray-900 sm:text-5xl animate__animated animate__fadeInDown display-font">
+          <h1 className="text-3xl font-bold tracking-normal text-gray-900 sm:text-5xl animate__animated animate__fadeInDown">
             Jasa Pembuatan Website Profesional Untuk Berbagai Macam Kebutuhan
           </h1>{" "}
           <br />

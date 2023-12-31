@@ -34,7 +34,7 @@ const Featured = () => {
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="mx-auto max-w-2xl lg:text-center">
                     <h2 className="text-base font-semibold leading-7 text-indigo-600" data-aos="fade-up">Jaminan Kepuasan</h2>
-                    <p className="mt-2 display-font text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl" data-aos="fade-up">
+                    <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl" data-aos="fade-up">
                         Kami selalu berusaha memberikan yang terbaik untuk Anda!
                     </p>
                 </div>
