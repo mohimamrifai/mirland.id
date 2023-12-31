@@ -1,38 +1,47 @@
 import React from 'react'
-import { RocketLaunchIcon, StarIcon, DevicePhoneMobileIcon } from '@heroicons/react/20/solid'
+import { RocketLaunchIcon, StarIcon, DevicePhoneMobileIcon, ArrowTrendingUpIcon, PencilSquareIcon } from '@heroicons/react/20/solid'
 
 import aboutimg from './../assets/aboutimg.png'
 
 const features = [
     {
-        name: 'Desain Modern.',
-        description:
-            'Kami menghadirkan website dengan desain modern yang sepenuhnya disesuaikan dengan kebutuhan bisnis Anda',
+        name: 'High Quality Design : ',
+        description: 'Kami menawarkan desain website yang menarik, modern, dan profesional, sehingga dapat meningkatkan citra bisnis Anda. Dibuat oleh profesional UI/UX Designer yang berpengalaman.',
         icon: StarIcon,
     },
     {
-        name: 'Responsive.',
-        description: 'Website yang telah kami rancang memiliki tampilan responsif, sehingga dapat diakses dengan sempurna dari berbagai perangkat, termasuk komputer, smartphone, dan tablet.',
+        name: 'Responsive : ',
+        description: 'Website yang telah kami rancang memiliki tampilan responsif, sehingga dapat diakses dengan sempurna dari berbagai perangkat seperti PC, Laptop, Tablet, dan Smartphone.',
         icon: DevicePhoneMobileIcon,
     },
     {
-        name: 'Pengerjaan Cepat.',
-        description: 'Kami menyelesaikan proyek dengan efisiensi yang luar biasa, memastikan pengerjaan yang cepat dan efektif.',
+        name: 'SEO Friendly : ',
+        description: 'Website yang kami buat memiliki struktur yang SEO Friendly, sehingga dapat membantu website Anda untuk mendapatkan peringkat yang lebih baik di mesin pencari seperti Google.',
+        icon: ArrowTrendingUpIcon,
+    },
+    {
+        name: 'Copywriting : ',
+        description: 'Website yang kami buat sudah termasuk copywriting, membuat website Anda lebih mudah dipahami oleh pengunjung.',
+        icon: PencilSquareIcon,
+    },
+    {
+        name: 'Pengerjaan Cepat : ',
+        description: 'Kami menawarkan pengerjaan website yang cepat dan efektif, sehingga Anda dapat segera memanfaatkan website untuk kebutuhan bisnis Anda.',
         icon: RocketLaunchIcon,
     },
 ]
 
 const About = () => {
     return (
-        <div className="overflow-hidden bg-white py-24 sm:py-36">
+        <div id='about' className="overflow-hidden pb-10 mt-5 sm:py-20 bg-white">
             <div className="mx-auto max-w-6xl px-6 lg:px-8">
                 <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
                     <div className="lg:pr-8 lg:pt-4 " data-aos="fade-up">
                         <div className="lg:max-w-lg">
                             <h2 className="text-base font-semibold leading-7 text-indigo-600">Tentang Kami</h2>
-                            <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Jasa pembuatan website <span className='text-indigo-600'>Mirland.id</span> </p>
+                            <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Jasa Pembuatan Website <span className='text-indigo-600'>Mirland.id</span> </p>
                             <p className="mt-6 text-lg leading-8 text-gray-600">
-                                Kami merupakan penyedia jasa pembuatan website untuk kebutuhan bisnis, dengan pendekatan yang modern dan desain yang menarik. Dikerjakan Oleh profesional yang berpengalaman.
+                                Kami merupakan penyedia jasa pembuatan website untuk berbagai kebutuhan, dengan keunggulan High Quality Design, Responsive, SEO Friendly, Copywriting, serta pengerjaan yang cepat dan efektif.
                             </p>
                             <dl className="mt-10 max-w-xl space-y-8 text-lg leading-7 text-gray-600 lg:max-w-none">
                                 {features.map((feature) => (
@@ -50,7 +59,7 @@ const About = () => {
                     <img
                         src={aboutimg}
                         alt="Product screenshot"
-                        className="w-[25rem] max-w-none sm:w-[57rem] md:-ml-4 lg:-ml-0"
+                        className="w-[25rem] max-w-none sm:w-[52rem] md:-ml-4 lg:-ml-0"
                         width={2432}
                         height={1442}
                         data-aos="fade-up"

@@ -20,7 +20,7 @@ const Navbar = () => {
         <header className="absolute inset-x-0 top-0 z-50 lg:px-[5%] animate__animated animate__fadeInDown">
             <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
                 <div className="flex lg:flex-1">
-                    <a href="#" className="-m-1.5 p-1.5 text-2xl font-bold text-indigo-600">
+                    <a href="/" className="-m-1.5 p-1.5 text-2xl font-bold text-indigo-600">
                         Mirland.id
                     </a>
                 </div>
@@ -42,7 +42,7 @@ const Navbar = () => {
                     ))}
                 </div>
                 <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-                    <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+                    <a href="https://api.whatsapp.com/send?phone=6282118668919&text=Halo%20admin%20mirland%2C%20" className="text-sm font-semibold leading-6 text-gray-900">
                         Chat Sekarang <span aria-hidden="true">&rarr;</span>
                     </a>
                 </div>
