@@ -15,15 +15,15 @@ const features = [
         icon: UserGroupIcon,
     },
     {
-        name: 'Website Mobile Friendly',
+        name: 'Performance',
         description:
-            'Kami pastikan website yang kami buat ramah terhadap semua jenis device, Ini bisa menjangkau client anda lebih banyak.',
+            'Website yang kami buat mengedapankan kecepatan respon website untuk user experience yang lebih baik.',
         icon: DevicePhoneMobileIcon,
     },
     {
-        name: 'SEO Friendly',
+        name: 'Security',
         description:
-            'Website yang kami buat ramah terhadap mesin pencari google, sehingga website anda bisa cepat terindeks oleh goole.',
+            '',
         icon: GlobeAltIcon,
     },
 ]
