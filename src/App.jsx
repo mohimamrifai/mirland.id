@@ -28,6 +28,7 @@ function App() {
       </div>
       <About />
       <Services />
+      {/* portfolio */}
       <Pricing />
       <Featured />
       <CallToAction />
