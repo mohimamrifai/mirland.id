@@ -13,6 +13,7 @@ const Footer = lazy(() => import('./components/Footer'));
 const Navbar = lazy(() => import('./components/Navbar'));
 const Pricing = lazy(() => import('./components/Pricing'));
 const Services = lazy(() => import('./components/Services'));
+const Loading = lazy(() => import('./components/Loading'));
 
 function App() {
 
@@ -23,7 +24,7 @@ function App() {
 
   return (
     <>
-      <Suspense fallback={<p>Loading</p>}>
+      <Suspense fallback={<Loading />}>
         <Navbar />
         {/* <Hero />
         <About />
