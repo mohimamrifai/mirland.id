@@ -1,10 +1,9 @@
-import React, { lazy, Suspense } from 'react';
+import React, { lazy } from 'react';
 import './App.css'
 import 'animate.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-import Loading from './components/Loading';
 const Hero = lazy(() => import('./components/Hero'));
 const CallToAction = lazy(() => import('./components/CallToAction'));
 const About = lazy(() => import('./components/About'));
@@ -24,7 +23,6 @@ function App() {
 
   return (
     <>
-      <Suspense fallback={<Loading />}>
         <Navbar />
         {/* <Hero />
         <About />
@@ -34,7 +32,6 @@ function App() {
         <CallToAction />
         <FAQ />
         <Footer /> */}
-      </Suspense>
     </>
   )
 }
