@@ -13,7 +13,7 @@ const About = () => {
               <h2 className="text-lg font-semibold leading-7 text-indigo-600">
                 Tentang Kami
               </h2>
-              <p className="mt-2 text-3xl font-bold tracking-normal text-gray-900 sm:text-4xl">
+              <p className="mt-2 text-2xl font-bold tracking-normal text-gray-900 sm:text-4xl">
                 Jasa Pembuatan Website{" "}
                 <span className="text-indigo-600">Mirland.id</span>{" "}
               </p>
