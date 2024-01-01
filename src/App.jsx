@@ -27,14 +27,14 @@ function App() {
     <>
       <Suspense fallback={renderLoader()}>
         <Navbar />
-        <Hero />
+        {/* <Hero />
         <About />
         <Services />
         <Pricing />
         <Featured />
         <CallToAction />
         <FAQ />
-        <Footer />
+        <Footer /> */}
       </Suspense>
     </>
   )
