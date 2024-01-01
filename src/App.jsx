@@ -1,18 +1,18 @@
-import React, { lazy } from 'react';
+import React from 'react';
 import './App.css'
 import 'animate.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Hero from './components/Hero';
+import CallToAction from './components/CallToAction';
+import About from './components/About';
+import FAQ from './components/FAQ';
+import Featured from './components/Featured';
+import Footer from './components/Footer';
+import Navbar from './components/Navbar';
+import Pricing from './components/Pricing';
+import Services from './components/Services';
 
-const Hero = lazy(() => import('./components/Hero'));
-const CallToAction = lazy(() => import('./components/CallToAction'));
-const About = lazy(() => import('./components/About'));
-const FAQ = lazy(() => import('./components/FAQ'));
-const Featured = lazy(() => import('./components/Featured'));
-const Footer = lazy(() => import('./components/Footer'));
-const Navbar = lazy(() => import('./components/Navbar'));
-const Pricing = lazy(() => import('./components/Pricing'));
-const Services = lazy(() => import('./components/Services'));
 
 function App() {
 
@@ -24,14 +24,14 @@ function App() {
   return (
     <>
         <Navbar />
-        {/* <Hero />
+        <Hero />
         <About />
         <Services />
         <Pricing />
         <Featured />
         <CallToAction />
         <FAQ />
-        <Footer /> */}
+        <Footer />
     </>
   )
 }
