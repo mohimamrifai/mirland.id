@@ -14,8 +14,6 @@ const Navbar = lazy(() => import('./components/Navbar'));
 const Pricing = lazy(() => import('./components/Pricing'));
 const Services = lazy(() => import('./components/Services'));
 
-const renderLoader = () => <p>Loading</p>;
-
 function App() {
 
   AOS.init({
@@ -25,7 +23,7 @@ function App() {
 
   return (
     <>
-      <Suspense fallback={renderLoader()}>
+      <Suspense fallback={<p>Loading</p>}>
         <Navbar />
         {/* <Hero />
         <About />
