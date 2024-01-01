@@ -33,7 +33,7 @@ const About = () => {
           <img
             src={about}
             alt="Gambar about"
-            className="w-[20rem] max-w-none sm:w-[40rem] md:-ml-4 lg:-ml-0"
+            className="w-[20rem] max-w-none sm:w-[35rem] md:-ml-4 lg:-ml-0"
             width={2432}
             height={1442}
             data-aos="fade-up"
