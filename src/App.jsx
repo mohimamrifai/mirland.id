@@ -30,8 +30,8 @@ function App() {
         <Hero />
         <About />
         <Services />
-        <Featured />
         <Pricing />
+        <Featured />
         <CallToAction />
         <FAQ />
         <Footer />
