@@ -1,9 +1,10 @@
-import React from "react";
-import Typed from "typed.js";
+import React, { Suspense, lazy, useEffect, useRef } from "react";
+// Lazy load Typed component
+const Typed = lazy(() => import("typed.js"));
 
 const Hero = () => {
   // Create reference to store the DOM element containing the animation
-  const el = React.useRef(null);
+  const el = useRef(null);
 
   const bulan = new Date().getMonth() + 1;
   const namaBulan = [
@@ -23,8 +24,11 @@ const Hero = () => {
 
   const teksPesan = `https://api.whatsapp.com/send?phone=6282118668919&text=Halo%20admin%20mirland%2C%20saya%20mau%20pesan%20website%20dengan%20harga%20diskon%205%25`;
 
-  React.useEffect(() => {
-    const typed = new Typed("#textberjalan", {
+  // Use lazy-loaded Typed component
+  const TypedComponent = Typed;
+
+  useEffect(() => {
+    const typed = new TypedComponent("#textberjalan", {
       strings: [
         "Landing Page",
         "Company Profile",
@@ -81,7 +85,9 @@ const Hero = () => {
           <br />
           <div className="flex items-center justify-between w-11/12 lg:w-8/12 mx-auto text-2xl lg:text-4xl font-bold tracking-tight text-gray-900 animate__animated animate__fadeInDown">
           👉
+          <Suspense fallback={<span>Loading...</span>}>
             <span className="text-indigo-600" ref={el} id="textberjalan"></span>
+          </Suspense>
             👈
           </div>
           <p className="mt-6 text-lg leading-6 text-gray-600 animate__animated animate__fadeInDown">
