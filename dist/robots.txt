@@ -1,0 +1,13 @@
+# Robots.txt for mirland.my.id
+User-agent: *
+Allow: /
+
+# Block admin/private areas (none currently, but ready for future)
+Disallow: /admin/
+Disallow: /api/
+Disallow: /private/
+
+Sitemap: https://www.mirland.my.id/sitemap.xml
+
+# Reference (not displayed to users): https://fastwork.id/user/imamrifai/web-development-84613121
+# Tags: Jasa Pembuatan Website Custom Professional
